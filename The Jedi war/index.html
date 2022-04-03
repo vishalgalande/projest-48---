@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8" />
+    <title>Star Wars : the jedi Wars</title>
+    <!-- Lib -->
+    <script src="./lib/p5.min.js"></script>
+    <script src="./lib/p5.dom.min.js"></script>
+    <script src="./lib/p5.sound.min.js"></script>
+    <script src="./lib/p5.play.js"></script>
+
+    <link rel="stylesheet" href="style.css" />
+
+    <!-- Firebase -->
+    <script src="https://www.gstatic.com/firebasejs/8.3.2/firebase-app.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/8.3.2/firebase-database.js"></script>
+
+    <script>
+     const firebaseConfig = {
+  apiKey: "AIzaSyAP5UToKrq6vCu7plZBjYZ-QwNTRyYrBHA",
+  authDomain: "the-jedi-war.firebaseapp.com",
+  databaseURL: "https://the-jedi-war-default-rtdb.firebaseio.com",
+  projectId: "the-jedi-war",
+  storageBucket: "the-jedi-war.appspot.com",
+  messagingSenderId: "154168936176",
+  appId: "1:154168936176:web:55140cea13d4f0b8266435"
+};
+      // Initialize Firebase
+      firebase.initializeApp(firebaseConfig);
+    </script>
+  </head>
+  <body>
+    <script src="./js/Game.js"></script>
+    <script src="./js/Form.js"></script>
+    <script src="./js/Player.js"></script>
+    <script src="./js/Bullet.js"></script>
+    <script src="./sketch.js"></script>
+  </body>
+</html>
